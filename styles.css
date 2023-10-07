@@ -9,18 +9,14 @@
 .wrapper {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(
-    to right top,
-    #020034,
-    #091245,
-    #1a1d57,
-    #292869,
-    #38347c
+  background: radial-gradient(
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
   );
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .container {
   padding: 2rem;
@@ -56,6 +52,7 @@
   align-items: center;
 }
 .user-chose {
+  font-style: italic;
 }
 
 #user-chose-text {
@@ -72,13 +69,14 @@
   margin-right: 1.2rem;
 }
 .comp-chose {
+  font-style: italic;
 }
 .result-box {
+  margin-bottom: 2rem;
 }
 .result {
   font-size: 2rem;
   margin-top: 1rem;
-  margin-bottom: 1.5rem;
   font-weight: 900;
 }
 .button-box {
@@ -87,6 +85,7 @@
   justify-content: center;
   gap: 6rem;
   align-items: center;
+  margin-bottom: 3rem;
 }
 .button1 {
   height: 18rem;
@@ -97,6 +96,7 @@
   border-color: white;
   background-repeat: no-repeat;
   background-position: 50% -10%;
+  cursor: pointer;
 }
 .button2 {
   height: 18rem;
@@ -107,6 +107,7 @@
   border-color: white;
   background-repeat: no-repeat;
   background-position: 70% 50%;
+  cursor: pointer;
 }
 .button3 {
   height: 18rem;
@@ -117,9 +118,20 @@
   border-color: white;
   background-repeat: no-repeat;
   background-position: 60% 50%;
+  cursor: pointer;
 }
+
+.button {
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.07);
+}
+
 .active {
   background-color: #1eff00;
+  transition: 0.5s;
 }
 
 .score-text {
@@ -137,6 +149,7 @@
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  border-radius: 15px;
 }
 .score-content {
   display: flex;
@@ -145,7 +158,12 @@
   display: flex;
   gap: 1rem;
 }
+
+#user-text {
+  font-weight: 400;
+}
 .user-score {
+  font-weight: bold;
   gap: 1rem;
 }
 #score-board-colon {
@@ -156,13 +174,18 @@
   gap: 1rem;
 }
 .comp-score {
+  font-weight: bold;
+}
+#comp-text {
+  font-weight: 400;
 }
 #reset-button {
   margin-top: 2rem;
-  background-color: black;
+  color: black;
+  background-color: whitesmoke;
   border: none;
-  padding: 0.5em;
-  font-size: 1rem;
+  padding: 0.4em 1.5rem;
+  font-size: 1.4rem;
   border-radius: 7px;
   cursor: pointer;
 }
