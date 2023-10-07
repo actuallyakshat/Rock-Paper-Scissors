@@ -8,16 +8,16 @@ const userScore = document.querySelector("[.user-score]");
 const compScore = document.querySelector("[.comp-score]");
 const resetButton = document.querySelector("[.reset]");
 
-function remove(){
-    button1.classList.remove("active");
-    button2.classList.remove("active");
-    button3.classList.remove("active");
+function remove() {
+  button1.classList.remove("active");
+  button2.classList.remove("active");
+  button3.classList.remove("active");
 }
 
-function init(){
-    userChoice.innerText = "";
-    compChoice.innerText = "";
-    remove();
+function init() {
+  userChoice.innerText = "";
+  compChoice.innerText = "";
+  remove();
 }
 
 init();

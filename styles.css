@@ -49,8 +49,8 @@
   align-items: center;
 }
 .button1 {
-  height: 300px;
-  width: 300px;
+  height: 18rem;
+  width: 18rem;
   background-image: url(Assets/rock-emoji.png);
   border-style: solid;
   border-radius: 50%;
@@ -59,8 +59,8 @@
   background-position: 50% 0%;
 }
 .button2 {
-  height: 300px;
-  width: 300px;
+  height: 18rem;
+  width: 18rem;
   background-image: url(Assets/paper-emoji.png);
   border-style: solid;
   border-radius: 50%;
@@ -69,8 +69,8 @@
   background-position: 70% 50%;
 }
 .button3 {
-  height: 300px;
-  width: 300px;
+  height: 18rem;
+  width: 18rem;
   background-image: url(Assets/scissors-emoji.png);
   border-style: solid;
   border-radius: 50%;
@@ -78,8 +78,8 @@
   background-repeat: no-repeat;
   background-position: 60% 50%;
 }
-.active{
-    background-color: #1eff00;
+.active {
+  background-color: #1eff00;
 }
 .result-box {
 }
