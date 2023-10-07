@@ -3,6 +3,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 .wrapper {
   height: 100vh;
@@ -11,12 +13,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .container {
-  height: 50%;
+  padding: 2rem;
+  height: 75%;
   background-color: #002c2b;
-  min-width: 550px;
+  /* min-width: 550px; */
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -24,57 +27,80 @@
   align-items: center;
 }
 .choosing-window {
-  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
   color: white;
-  width: 70%;
-  background-color: black;
+  height: 5rem;
+  width: 100%;
+  /* min-width: 100%; */
+  /* background-color: black; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  margin: 2rem 0rem 5rem 0rem;
+  display: flex;
+  align-items: center;
 }
 .user-choice {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .user-chose {
+
 }
+
+#user-chose-text {
+    margin-right: 1.2rem;
+}
+
 .comp-choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#comp-chose-text {
+    margin-right: 1.2rem;
 }
 .comp-chose {
+
 }
 .button-box {
-  width: 60%;
-  background-color: white;
+  width: 70%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 6rem;
   align-items: center;
 }
 .button1 {
   height: 18rem;
   width: 18rem;
-  background-image: url(Assets/rock-emoji.png);
+  background: url(Assets/rock-emoji.png);
   border-style: solid;
   border-radius: 50%;
-  border-color: red;
+  border-color: white;
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
 .button2 {
   height: 18rem;
   width: 18rem;
-  background-image: url(Assets/paper-emoji.png);
+  background: url(Assets/paper-emoji.png);
   border-style: solid;
   border-radius: 50%;
-  border-color: red;
+  border-color: white;
   background-repeat: no-repeat;
   background-position: 70% 50%;
 }
 .button3 {
   height: 18rem;
   width: 18rem;
-  background-image: url(Assets/scissors-emoji.png);
+  background: url(Assets/scissors-emoji.png);
   border-style: solid;
   border-radius: 50%;
-  border-color: red;
+  border-color: white;
   background-repeat: no-repeat;
   background-position: 60% 50%;
 }
