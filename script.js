@@ -25,6 +25,8 @@ function init(){
     userScore.innerText = "";
     compScore.innerText = "";
     resetButton.style.display = "none";
+    usercurrentScore = 0;
+    compcurrentScore = 0;
     userScore.innerText = `${usercurrentScore}`;
     compScore.innerText = `${compcurrentScore}`;
 }
