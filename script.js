@@ -8,6 +8,8 @@ const userScore = document.querySelector(".user-score");
 const compScore = document.querySelector(".comp-score");
 const resetButton = document.querySelector(".reset");
 
+init();
+
 function removeActive(){
     rock.classList.remove('active');
     paper.classList.remove('active');
@@ -24,4 +26,23 @@ function init(){
     resetButton.style.display = "none";
 }
 
-init();
+rock.addEventListener('click', ()=>{
+    let choice = rock;
+    rock.classList.add('active');
+    whoWon(choice);
+});
+
+paper.addEventListener('click', ()=>{
+    let choice = paper;
+    paper.classList.add('active');
+    whoWon(paper);
+});
+
+scissor.addEventListener('click', ()=>{
+    let choice = scissor;
+    scissor.classList.add('active');
+    whoWon(scissor);
+});
+
+resetButton.addEventListener('click', init);
+
