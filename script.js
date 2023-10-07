@@ -69,38 +69,38 @@ function whoWon(userSelection){
     let arr = ["rock", "paper", "scissor"];
     let compSelection = arr[getRndInteger(0, 3)];
     let result;
-    compChoice.innerText = compSelection;
+    compChoice.innerText = compSelection.charAt(0).toUpperCase() + compSelection.slice(1);
     if(userSelection == compSelection){
         result = "Match Tied";
     }
     else if(userSelection == "rock"){
         if(compSelection == "paper"){
-            result = "Lose";
+            result = "You Lose";
         }
         else{
-            result = "Won"
+            result = "You Won"
         }
     }
     else if(userSelection == "paper"){
         if(compSelection == "scissor"){
-            result = "Lose";
+            result = "You Lose";
         }
         else{
-            result = "Won"
+            result = "You Won"
         }
     }
     else{
         if(compSelection == "rock"){
-            result = "Lose";
+            result = "You Lose";
         }
         else{
-            result = "Won"
+            result = "You Won"
         }
     }
-    if(result == "Won"){
+    if(result == "You Won"){
         usercurrentScore = usercurrentScore + 1;
     }
-    else if(result == "Lose"){
+    else if(result == "You Lose"){
         compcurrentScore = compcurrentScore + 1;
     }
     finalResult.innerText = `${result}`;
