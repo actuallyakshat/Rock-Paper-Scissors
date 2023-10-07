@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+}
+.container {
+}
+.choosing-window {
+}
+.user-choice {
+}
+.user-chose {
+}
+.comp-choice {
+}
+.comp-chose {
+}
+.button-box {
+}
+.button1 {
+}
+.button2 {
+}
+.button3 {
+}
+.result-box {
+}
+.result {
+}
+.score-board {
+}
+.reset {
+}
