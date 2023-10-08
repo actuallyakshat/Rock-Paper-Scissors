@@ -71,7 +71,7 @@ function whoWon(userSelection){
     let result;
     compChoice.innerText = compSelection.charAt(0).toUpperCase() + compSelection.slice(1);
     if(userSelection == compSelection){
-        result = "Match Tied";
+        result = "Draw";
     }
     else if(userSelection == "rock"){
         if(compSelection == "paper"){
